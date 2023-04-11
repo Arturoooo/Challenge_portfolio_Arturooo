@@ -1,4 +1,4 @@
-# PODZADANIE 1: Konfiguracja oprogramowania 
+# ZADANIE 1: Konfiguracja oprogramowania 
 ## Podzadanie 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?
 ***
 Obecnie pracuję jako manualny tester oprogramowania. 
@@ -16,3 +16,57 @@ Od zawsze interesowałem się branżą IT jestem bardzo zmotywowany, aby ukończ
 # GET ISTQB "Purpurowy"
 ## Podzadanie 2: wynik quizu
 Z quizu udało mi się uzyskać 13/15 punktów 
+
+***
+# ZADANIE 2: Selektory
+
+#### Poniżej wypisuję selektory, które udało mi się znaleźć na stronie testowej. 
+
+* **Scouts_Panel_text_xpath**
+
+        //*[@id="__next"]/form/div/div[1]/h5
+        //*[contains(@class, "MuiTypography-h5")]
+        //*[text()="Scouts Panel"] 
+
+* **Login_field_xpath**
+
+        //*[@id="login-label"]
+        //*[text()="Login"]
+        //*[@for="login"] 
+
+* **Password_field_xpath**
+
+        //*[@id="password-label"]
+        //*[text()="Password"]
+        //*[@for="password"] 
+
+* **Remind_password_hyperlink_xpath**
+
+        //*[@id="__next"]/form/div/div[1]/a
+        //*[text()="Remind password"]
+        //child::div/a
+
+* **Language_listbox_xpath**
+
+        //*[@aria-haspopup="listbox"] 
+        //*[contains(@class, "MuiInput-underline jss6")]
+        //*[@id="__next"]/form/div/div[2]/div/input
+
+* **Sign_in_button_xpath**
+
+        //*[@id="__next"]/form/div/div[2]/button
+        //*[contains(@class, "MuiButtonBase-root")]
+        //*[@class="MuiTouchRipple-root"]
+***
+*Poniższa tabela przedstawia jeden wybrany selektor dla każdego elementu strony:*
+
+| xpath                           | selektor                                    |
+|---------------------------------|---------------------------------------------|
+| Scouts_Panel_text_xpath         | `//*[@id="__next"]/form/div/div[1]/h5`      |
+| Login_input_type_xpath          | `//*[@id="login-label"]`                    |        
+| Password_input_type_xpath       | `//*[@id="password-label"]`                 |
+| Remind_password_hyperlink_xpath | `//*[@id="__next"]/form/div/div[1]/a`       |
+| Language_listbox_xpath          | `//*[@aria-haspopup="listbox"]`             |
+| Sign_in_button_xpath            | `//*[@id="__next"]/form/div/div[2]/button`  |
+
+***
