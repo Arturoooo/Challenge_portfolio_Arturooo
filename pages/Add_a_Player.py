@@ -1,33 +1,26 @@
-import os
-import unittest
-import time
-from selenium import webdriver
-
-from pages.dashboard import Dashboard
-from pages.login_page import LoginPage
-from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
+from pages.base_page import BasePage
 
 
-class TestAddAPlayer(unittest.TestCase):
-    driver = None
+class LoginPage(BasePage):
+    login_field_xpath = "//*[@id='login']"
+    password_field_xpath = "//*[@id='password']"
+    sign_in_button_xpath = "//*[@id='__next']/form/div/div[2]/button"
+    add_a_player_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button"
+    login_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    def type_in_email(self, email):
+        self.field_send_keys(self.login_field_xpath, email)
 
-    @classmethod
-    def setUp(self):
-        os.chmod(DRIVER_PATH, 755)
-        self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
-        self.driver.fullscreen_window()
-        self.driver.implicitly_wait(IMPLICITLY_WAIT)
+    def type_in_password(self, password):
+        self.field_send_keys(self.password_field_xpath, password)
 
-    def test_add_a_player(self,):
-        user_login = LoginPage(self.driver)
-        user_login.title_of_page()
-        user_login.type_in_email('user07@getnada.com')
-        user_login.type_in_password('Test-1234')
-        user_login.click_on_the_sign_in_button()
-        user_login.click_on_the_add_a_player_button()
-        time.sleep(5)
+    def click_on_the_sign_in_button(self):
+        self.click_on_the_element(self.sign_in_button_xpath)
 
-    @classmethod
-    def tearDown(self):
-        self.driver.quit()
+    def title_of_page(self):
+        assert self.get_page_title(self.login_url) == self.expected_title
+
+    def click_on_the_add_a_player_button(self):
+        self.click_on_the_element(self.add_a_player_xpath)
+
+    def click_on_the_button(self, selector, selector_type=By.XPATH):
+        return self.click_on_the_element(selector_type)
