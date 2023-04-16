@@ -7,8 +7,15 @@ class BasePage():
     def __init__(self, driver: WebDriver):
         self.driver = driver
 
-    def field_send_keys(self, selector, value, locator_type=By.XPATH):
+    def field_send_keys(self, selector, value, locator_type=By.XPATH) -> object:
         return self.driver.find_element(locator_type, selector).send_keys(value)
 
     def click_on_the_element(self, selector, selector_type=By.XPATH):
         return self.driver.find_element(selector_type, selector).click()
+
+    def get_page_title(self, url):
+        self.driver.get(url)
+        return self.driver.title
+
+    def click_on_the_button(self, selector, selector_type=By.XPATH):
+        return self.click_on_the_element(selector_type)

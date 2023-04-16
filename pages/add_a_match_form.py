@@ -12,4 +12,5 @@ class Dashboard(BasePage):
     Clear_button_xpath = "//*[@id='__next']/div[1]/main/div[2]/form/div[3]/button[2]/span[1]"
     General_input_xpath = "//*[@name='general']"
     Time_played_input_xpath = "//*[@name='timePlayed']"
+
     pass
