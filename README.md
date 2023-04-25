@@ -71,4 +71,4 @@ Z quizu udało mi się uzyskać 13/15 punktów
 
 ***
 
-Link do GoogleDrive: https://drive.google.com/file/d/13hAE9XtVG7uKrAwDCz1-Lysoj_ekdcIL/view?usp=sharing
+Link do GoogleDrive: https://drive.google.com/drive/folders/1CegFhwwZ8UcDR4zYMlB5ZgFjMXPzTMvm?usp=share_link
