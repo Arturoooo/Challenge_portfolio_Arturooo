@@ -70,3 +70,5 @@ Z quizu udało mi się uzyskać 13/15 punktów
 | Sign_in_button_xpath            | `//*[@id="__next"]/form/div/div[2]/button`  |
 
 ***
+
+Link do GoogleDrive: https://docs.google.com/document/d/1dieS3d_HYZ9yrfD96ExEOhwueFn9Yy8E7ZpYiQaWhbw/edit?usp=sharing

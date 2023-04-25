@@ -1,7 +1,9 @@
+from selenium.webdriver.common.by import By
+
 from pages.base_page import BasePage
 
 
-class LoginPage(BasePage):
+class AddPlayer(BasePage):
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"
     sign_in_button_xpath = "//*[@id='__next']/form/div/div[2]/button"
