@@ -8,7 +8,7 @@ from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class testRemoveLanguageButton(unittest.TestCase):
+class testAddARealPlayer(unittest.TestCase):
     driver = None
 
     @classmethod
@@ -19,7 +19,7 @@ class testRemoveLanguageButton(unittest.TestCase):
         self.driver.fullscreen_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_remove_language_button(self,):
+    def test_add_a_real_player(self,):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
         user_login.type_in_email('user07@getnada.com')
