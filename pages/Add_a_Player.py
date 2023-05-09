@@ -8,7 +8,7 @@ class AddPlayer(BasePage):
     password_field_xpath = "//*[@id='password']"
     sign_in_button_xpath = "//*[@id='__next']/form/div/div[2]/button"
     add_a_player_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button"
-    login_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    login_url = 'https://scouts.futbolkolektyw.pl/en/'
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
 

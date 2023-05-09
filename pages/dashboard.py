@@ -5,7 +5,7 @@ import time
 class Dashboard(BasePage):
     futbol_kolektyw_logo_xpath = '//*[@title ="Logo Scouts Panel"]'
     expected_title = "Scouts panel"
-    dashboard_url = 'https://scouts-test.futbolkolektyw.pl/'
+    dashboard_url = 'https://scouts.futbolkolektyw.pl/en/'
     add_a_player_xpath = "//*[@id='__next']/div[1]/main/div[3]/div[2]/div/div/a/button"
 
 
