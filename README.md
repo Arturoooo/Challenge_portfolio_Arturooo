@@ -2,7 +2,7 @@
 ## Podzadanie 1: Dlaczego zdecydowałem się wziąć udział w wyzwaniu Dare IT Challenge?
 ***
 Obecnie pracuję jako manualny tester oprogramowania. 
-Zdecydowałe się wziąć udział w wyzwaniu Dare It, ponieważ chciałbym nauczyć się robić testy 
+Zdecydowałem się wziąć udział w wyzwaniu Dare It, ponieważ chciałbym nauczyć się robić testy 
 automatyczne i rozwinąć swoje portfolio, aby mieć większe szanse na rynku pracy. 
 Od zawsze interesowałem się branżą IT jestem bardzo zmotywowany, aby ukończyć te wyzwanie.
 * **Moje oczekiwania względem kursu to:** 
